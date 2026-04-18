@@ -9,24 +9,32 @@
         body {
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100dvh;
         }
 
-        @media (max-width: 600px) {
-            img {
+        .prank-img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Tablet */
+        @media (max-width: 768px) {
+            .prank-img {
                 width: 100%;
-                height: 100%;
             }
         }
 
+        /* Mobile */
+        @media (max-width: 480px) {
+            .prank-img {
+                width: 100%;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <img src="./img1.gif" alt="" width="40%" height="100%">
+    <img src="./img1.gif" alt="Prank GIF" class="prank-img">
 </body>
 
 </html>
